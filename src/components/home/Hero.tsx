@@ -13,7 +13,7 @@ const Hero = () => {
 				))}
 			</div>
 
-			<div className={`mb-20 grid gap-5 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]`}>
+			<div className={`mb-20 grid items-start sm:grid-cols-2 justify-center gap-5 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]`}>
 				{items.map((item, index) => (
 					<div
 						className={`flex flex-col gap-2.5 ${index % 2 === 0 ? 'animate-fade-right' : 'animate-fade-left'}`}
