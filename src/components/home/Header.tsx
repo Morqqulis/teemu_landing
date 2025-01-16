@@ -25,7 +25,7 @@ const Header = () => {
 				<div
 					className={`animate-fade-right animate-ease-linear flex flex-col gap-3 text-center sm:text-left md:gap-10`}
 				>
-					<span className={`uppercase text-[#1C1C1C]`}>NOW PLAYING</span>
+					<span className={`uppercase text-gray-600`}>NOW PLAYING</span>
 					<span className={`text-digital text-[#E8927C] ${orbitron.className}`}>
 						{text.slice(position) + text.slice(0, position)}
 					</span>
