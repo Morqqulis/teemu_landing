@@ -4,7 +4,7 @@ import { images, items } from './constants'
 
 const Hero = () => {
 	return (
-		<div className={`px-8 pb-20 md:-mt-[7%]`}>
+		<div className={`px-4 pb-20 sm:px-8 md:-mt-[7%]`}>
 			<div className={`animate-fade-up mb-20 flex items-center justify-between`}>
 				{images.map((img) => (
 					<div key={img.id}>
@@ -32,7 +32,7 @@ const Hero = () => {
 
 			<div className="flex flex-col items-center justify-around md:flex-row md:items-start">
 				<div className="flex items-center justify-center">
-					<Image className="h-auto max-w-full" src={`/bottle.png`} alt="Field Bottle" width={300} height={400} />
+					<Image className="h-auto max-w-full" src={`/bottle.png`} alt="Field Bottle" width={346} height={616} />
 				</div>
 
 				<div className="max-w-md p-8">
