@@ -13,13 +13,15 @@ const Hero = () => {
 				))}
 			</div>
 
-			<div className={`mb-20 grid items-start sm:grid-cols-2 justify-center gap-5 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]`}>
+			<div
+				className={`mb-20 grid items-start justify-center gap-5 sm:grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]`}
+			>
 				{items.map((item, index) => (
 					<div
 						className={`flex flex-col gap-2.5 ${index % 2 === 0 ? 'animate-fade-right' : 'animate-fade-left'}`}
 						key={item.id}
 					>
-						<div className={`max-w-[280px]`}>
+						<div className={`max-w-full sm:max-w-[360px]`}>
 							<Image className={`h-auto w-full`} src={item.src} width={236} height={236} alt={'Icon'} />
 						</div>
 						<h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">{item.title}</h3>
@@ -45,12 +47,12 @@ const Hero = () => {
 					</button>
 
 					<div className="space-y-4 pt-4 text-gray-500">
-						<p className="text-sm">
+						<p className="">
 							white stainless steel bottle with screw top and &quot;teenage engineering field system&quot; print. can
 							keep your drink hot or cold for 10-12 hours.
 						</p>
 
-						<ul className="text-sm">
+						<ul className="">
 							<li>• powder-coated stainless steel</li>
 							<li>• dimensions: 260 x 70 mm | 10.2 x 2.8 in, 18 oz | 532 ml</li>
 						</ul>
