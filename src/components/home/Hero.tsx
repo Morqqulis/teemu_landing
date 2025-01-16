@@ -14,14 +14,14 @@ const Hero = () => {
 			</div>
 
 			<div
-				className={`mb-20 grid items-start justify-center gap-5 sm:grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]`}
+				className={`mb-20 grid items-start justify-center gap-5 sm:grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]`}
 			>
 				{items.map((item, index) => (
 					<div
 						className={`flex flex-col gap-2.5 ${index % 2 === 0 ? 'animate-fade-right' : 'animate-fade-left'}`}
 						key={item.id}
 					>
-						<div className={`max-w-full sm:max-w-[360px]`}>
+						<div className={`max-w-full`}>
 							<Image className={`h-auto w-full`} src={item.src} width={236} height={236} alt={'Icon'} />
 						</div>
 						<h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">{item.title}</h3>
