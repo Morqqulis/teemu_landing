@@ -1,0 +1,61 @@
+const items = [
+	{
+		id: 1,
+		src: '/block/1.svg',
+		title: `interview`,
+		text: `LET YOU AND YOUR SUBJECT FOCUS ON THE JOB AT HAND. PERFECT FOR ONE-ON-ONE INTERVIEWING TO ITS DISCREET SIZE AND DEDICATED FUNCTION MAKES FOR AN UNOBTRUSIVE RECORDING DEVICE.`,
+	},
+	{
+		id: 2,
+		src: '/block/2.svg',
+		title: `podcast`,
+		text: `WHETHER YOU'RE IN THE STUDIO OR OUT IN THE FIELD, ITS COMPACT DESIGN HOLDS IS PERFECT FOR PODCAST RECORDING. CONNECT UP TO 6 EXTERNAL MICS, SET THE LEVELS AND KEEP AN EYE ON THEM WITH THE VU METER.`,
+	},
+	{
+		id: 3,
+		src: '/block/3.svg',
+		title: `dynamic editing`,
+		text: `NEED TO RE-DO A SNIPPET OF A TAKE, MULTITRACK OR LAYER OVERDUBS? WITH ITS BUILT-IN MARKERS, OR LOOP THE TIP-7 IS YOUR PERFECT COMPANION FOR ENHANCED RECORDING AND EDITING POSSIBILITIES.`,
+	},
+	{
+		id: 4,
+		src: '/block/4.svg',
+		title: `voice memos`,
+		text: `THINK OUT LOUD. TP-7 DOES THE REST. LET TP-7 CAPTURE YOUR THOUGHTS AND IDEAS. CONVERT THEM INTO ACCURATE TEXT IN MOST LANGUAGES. PERFECT FOR STUDENTS, PROFESSIONALS AND AVID THINKERS AND WRITERS.`,
+	},
+	{
+		id: 5,
+		src: '/block/5.svg',
+		title: `field recording`,
+		text: `INSPIRATION CAN STRIKE WHEN YOU LEAST EXPECT IT. WITH AN INTERNAL MIC, STEREO INPUTS, AND A 7 HR RECHARGEABLE BATTERY, YOU NEVER HAVE TO MISS GREAT AUDIO ON THE GO. NEVER LOSE AN IDEA AGAIN.`,
+	},
+	{
+		id: 6,
+		src: '/block/6.svg',
+		title: `live performance`,
+		text: `USE TP-7 IN A LIVE PERFORMANCE OR RECORDING SESSION. PLUG YOUR INSTRUMENT IN YOUR STUDIO, OR RECORD YOUR LIVE SET. CONNECT TO YOUR DAW AND EVEN USE TP-7 AS TURNTABLES AND DJ-P TO MIX.`,
+	},
+]
+
+const images = [
+	{
+		id: 1,
+		src: '/dynamic.jpg',
+		width: 231,
+		height: 231,
+	},
+	{
+		id: 2,
+		src: '/player.png',
+		width: 675,
+		height: 630,
+	},
+	{
+		id: 3,
+		src: '/dynamic.jpg',
+		width: 231,
+		height: 231,
+	},
+]
+
+export { images, items }
