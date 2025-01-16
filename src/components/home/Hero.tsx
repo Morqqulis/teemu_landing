@@ -1,19 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { images, items } from './constants'
+import Player from './Player'
+import { items } from './constants'
 
 const Hero = () => {
 	return (
-		<div className={`px-4 pb-20 sm:px-8 md:-mt-[7%]`}>
-			<div className={`mb-20 flex items-center justify-between`}>
-				{images.map((img) => (
-					<div
-						className={`first:animate-fade-right last:animate-fade-left animate-ease-linear [&:nth-child(2)]:animate-fade-down`}
-						key={img.id}
-					>
-						<Image src={img.src} width={img.width} height={img.height} alt={'Icon'} />
-					</div>
-				))}
+		<div className={`px-4 pb-20 sm:px-8 md:-mt-[3.5%]`}>
+			<div className={`mb-20 flex items-center justify-between gap-2.5`}>
+				<Player />
 			</div>
 
 			<div
@@ -25,7 +19,13 @@ const Hero = () => {
 						key={item.id}
 					>
 						<div className={`max-w-full`}>
-							<Image className={`h-auto w-full`} src={item.src} width={236} height={236} alt={'Icon'} />
+							<Image
+								className={`h-auto w-full`}
+								src={item.src || '/placeholder.svg'}
+								width={236}
+								height={236}
+								alt={'Icon'}
+							/>
 						</div>
 						<h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">{item.title}</h3>
 						<p className="text-sm leading-7">{item.text}</p>
