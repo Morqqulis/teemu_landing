@@ -4,7 +4,7 @@ import { images, items } from './constants'
 
 const Hero = () => {
 	return (
-		<div className={`pb-20 md:-mt-[7%] px-6`}>
+		<div className={`px-6 pb-20 md:-mt-[7%]`}>
 			<div className={`animate-fade-up mb-20 flex items-center justify-between`}>
 				{images.map((img) => (
 					<div key={img.id}>
@@ -13,22 +13,24 @@ const Hero = () => {
 				))}
 			</div>
 
-			<div className={`mb-20 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5`}>
+			<div className={`mb-20 grid gap-5 md:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]`}>
 				{items.map((item, index) => (
 					<div
 						className={`flex flex-col gap-2.5 ${index % 2 === 0 ? 'animate-fade-right' : 'animate-fade-left'}`}
 						key={item.id}
 					>
-						<Image src={item.src} width={236} height={236} alt={'Icon'} />
+						<div className={`max-w-[280px]`}>
+							<Image className={`h-auto w-full`} src={item.src} width={236} height={236} alt={'Icon'} />
+						</div>
 						<h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">{item.title}</h3>
 						<p className="text-sm leading-7">{item.text}</p>
 					</div>
 				))}
 			</div>
 
-			<div className="flex flex-col justify-around md:flex-row">
+			<div className="flex flex-col items-center justify-around md:flex-row md:items-start">
 				<div className="flex items-center justify-center">
-					<Image className="h-auto" src={`/bottle.png`} alt="Field Bottle" width={300} height={400} />
+					<Image className="h-auto max-w-full" src={`/bottle.png`} alt="Field Bottle" width={300} height={400} />
 				</div>
 
 				<div className="max-w-md p-8">

@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const Header = () => {
 	return (
-		<header className={`bg-black py-[30px] md:pt-[100px]`}>
-			<div className="container flex flex-col items-center justify-between sm:flex-row md:items-end">
+		<header className={`bg-black py-[30px] md:pt-[100px] px-8`}>
+			<div className="flex flex-col items-center justify-between sm:flex-row md:items-end">
 				<Link className={`animate-fade-left`} href={'/'}>
 					<Image src={'/logo.svg'} alt={'Logotype'} width={168} height={162} />
 				</Link>
