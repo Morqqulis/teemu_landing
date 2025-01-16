@@ -4,7 +4,7 @@ import { images, items } from './constants'
 
 const Hero = () => {
 	return (
-		<div className={`px-6 pb-20 md:-mt-[7%]`}>
+		<div className={`px-8 pb-20 md:-mt-[7%]`}>
 			<div className={`animate-fade-up mb-20 flex items-center justify-between`}>
 				{images.map((img) => (
 					<div key={img.id}>
