@@ -5,9 +5,12 @@ import { images, items } from './constants'
 const Hero = () => {
 	return (
 		<div className={`px-4 pb-20 sm:px-8 md:-mt-[7%]`}>
-			<div className={`animate-fade-up mb-20 flex items-center justify-between`}>
+			<div className={`mb-20 flex items-center justify-between`}>
 				{images.map((img) => (
-					<div key={img.id}>
+					<div
+						className={`first:animate-fade-right last:animate-fade-left animate-ease-linear [&:nth-child(2)]:animate-fade-down`}
+						key={img.id}
+					>
 						<Image src={img.src} width={img.width} height={img.height} alt={'Icon'} />
 					</div>
 				))}
@@ -18,7 +21,7 @@ const Hero = () => {
 			>
 				{items.map((item, index) => (
 					<div
-						className={`flex flex-col gap-2.5 ${index % 2 === 0 ? 'animate-fade-right' : 'animate-fade-left'}`}
+						className={`animate-ease-linear flex flex-col gap-2.5 ${index % 2 === 0 ? 'animate-fade-right' : 'animate-fade-left'}`}
 						key={item.id}
 					>
 						<div className={`max-w-full`}>

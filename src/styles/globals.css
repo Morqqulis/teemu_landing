@@ -70,3 +70,14 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes flicker {
+  0% { opacity: 0.95; }
+  50% { opacity: 1; }
+  100% { opacity: 0.95; }
+}
+
+.text-digital {
+  animation: flicker 2s infinite;
+  text-shadow: 0 0 2px rgba(232, 146, 124, 0.3);
+}
