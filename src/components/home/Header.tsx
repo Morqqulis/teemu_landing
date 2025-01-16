@@ -20,7 +20,14 @@ const Header = () => {
 		<header className={`bg-black px-4 py-[30px] sm:px-8 md:pt-[100px]`}>
 			<div className="flex flex-col items-center justify-between gap-5 sm:flex-row md:items-end">
 				<Link className={`animate-fade-left animate-ease-linear`} href={'/'}>
-					<Image className={`max-w-[170px]`} src={'/logo.svg'} alt={'Logotype'} width={1775} height={1673} priority />
+					<Image
+						className={`h-[162px] max-w-[168px]`}
+						src={'/logo.svg'}
+						alt={'Logotype'}
+						width={1775}
+						height={1673}
+						priority
+					/>
 				</Link>
 				<div
 					className={`animate-fade-right animate-ease-linear flex flex-col gap-3 text-center sm:text-left md:gap-10`}
